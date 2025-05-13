@@ -1,0 +1,246 @@
+/* style.css */
+.background {
+  background-color: #f5f0e1;
+  padding: 50px;
+  color: #3d2b1f;
+  line-height: 1.7;
+}
+
+.manchete {
+  margin: 0 auto 50px auto;
+  max-width: 1020px;
+  border-bottom: 4px solid #3d2b1f;
+  padding-bottom: 25px;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 2.1fr 1.1fr;
+  grid-column-gap: 60px;
+  max-width: 1020px;
+  margin: 0 auto 50px auto;
+}
+
+.textoesquerda {
+  font-family: 'Times New Roman', serif;
+  font-size: 18px;
+  line-height: 1.9;
+  column-count: 2;
+  column-gap: 45px;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.textodireita {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-left: 3px solid #b8860b;
+  padding-left: 30px;
+}
+
+.textodireita img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+.textodireita p {
+  line-height: 1.7;
+  margin-top: 0;
+  color: #555;
+}
+
+.introduction-section .conteudo {
+  margin-bottom: 60px;
+}
+
+.imprensa {
+  width: 100%;
+  padding: 50px;
+  background-color: #f5f0e1;
+  margin-bottom: 60px;
+ 
+}
+
+.imprensa img {
+  max-width: 1020px;
+  height: auto;
+  margin: 0 auto 30px auto;
+  display: block;
+}
+
+.imprensa p {
+  font-family: 'Times New Roman', serif;
+  font-size: 18px;
+  line-height: 1.9;
+  color: #3d2b1f;
+  text-align: justify;
+  max-width: 1020px;
+  margin: 0 auto 30px auto;
+  hyphens: auto;
+}
+
+@media (max-width: 767px) {
+  .imprensa p {
+    column-count: 1;
+  }
+}
+
+.opressao {
+  width: 100%;
+  padding: 50px;
+  background-color: #f5f0e1;
+
+}
+
+.opressao img {
+  max-width: 1020px;
+  height: auto;
+  margin: 0 auto 30px auto;
+  display: block;
+}
+
+.opressao p {
+  font-family: 'Times New Roman', serif;
+  font-size: 18px;
+  line-height: 1.9;
+  color: #3d2b1f;
+  text-align: justify;
+  max-width: 1020px;
+  margin: 0 auto 30px auto;
+  hyphens: auto;
+}
+
+@media (max-width: 767px) {
+  .opressao p {
+    column-count: 1; 
+  }
+}
+
+@media (max-width: 767px) {
+  .opressao p {
+      column-count: 1;
+  }
+}
+
+.imagens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background-color: #f5f0e1;
+}
+
+.imagens > img:first-child {
+  max-width: 1020px;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.image-row {
+  display: flex;
+  width: 100%;
+  max-width: 1020px;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.imagem-container {
+  width: 340px;
+  height: 340px;
+  overflow: hidden;
+  border: 1px solid #b8860b;
+  transition: transform 0.3s ease-in-out;
+}
+
+.imagem-container:hover {
+  transform: scale(1.05);
+}
+
+.imagem-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.voltar-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #392f1d 0%, #624d2d 100%); 
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  transition: background 0.3s ease; /* Transição suave para o hover */
+}
+
+.voltar-btn:hover {
+  background: linear-gradient(135deg, #624d2d  0%, #392f1d 100%); /* Inverte o gradiente no hover */
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada no hover */
+}
+footer {
+  background-color: #332512;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+} /* style.css */
+.ultimamanchete {
+  max-width: 1020px;
+  margin: 0 auto 40px auto;
+}
+
+/* style.css */
+.ultimamanchete {
+  max-width: 1020px;
+  margin: 0 auto 40px auto;
+}
+
+.ultimamanchete > img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.personagens-destaque {
+  display: flex;
+  justify-content: center; /* Centraliza as imagens horizontalmente */
+  align-items: center; /* Alinha verticalmente ao centro */
+  max-width: 1020px;
+  margin: 20px auto;
+  gap: 20px; /* Espaçamento entre as imagens */
+  flex-wrap: wrap; /* Permite que quebrem para a próxima linha em telas menores */
+}
+
+.personagens-destaque div {
+  width: 150px; /* Tamanho menor para as imagens */
+  height: auto;
+  border: 1px solid #b8860b;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.personagens-destaque div img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Adaptações para telas menores (Responsividade) */
+@media (max-width: 800px) { /* Aumentei a largura máxima para 800px */
+  .personagens-destaque {
+    flex-direction: column; /* Empilha as imagens em telas menores */
+    align-items: center;
+  }
+
+  .personagens-destaque div {
+    width: 80%;
+    margin: 10px 0;
+  }
+}

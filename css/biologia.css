@@ -1,0 +1,170 @@
+
+#mapa2{
+    height: 400px;
+}
+
+#nematoide2, #mapa2{
+    border-radius: 30px;
+}
+
+#tabela2{
+    border-radius: 20px;
+}
+#video2{
+    border-radius: 10px;
+}
+#nematoide, #mapa, #tabela{
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+h2 {
+    color:#216839;
+    text-align: center;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+ul {
+    list-style: square inside;
+    margin-bottom: 1rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+video {
+    margin: 1rem auto;
+    display: block;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: 2px solid #216839;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    margin-left: 16%;
+}
+
+#nematoide, #mapa, #tabela {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #216839;
+    margin: 2rem 0;
+}
+
+.question {
+    background-color: #ffffff;
+    border: 1px solid #dcdde1;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.options li {
+    padding: 0.5rem;
+}
+
+table {
+    width: 30%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+thead th {
+    background-color: #216839;
+    color: #ffffff;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+tbody td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+}
+
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+#p1{
+    text-align: center;
+}
+
+header{
+    text-align: center;
+    padding: 2cap;
+    background-color: #216839;
+    color: #ffffff;
+    border-radius: 10px;
+}
+.voltar-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #1a6b09 0%, #1a6b09 100%); 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: background 0.3s ease; /* Transição suave para o hover */
+  }
+  
+  .voltar-btn:hover {
+    background: linear-gradient(135deg, #1a6b09  0%, #1a6b09 100%); /* Inverte o gradiente no hover */
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada no hover */
+  }
+  footer {
+    background-color: #1a6b09;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}

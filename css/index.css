@@ -1,0 +1,80 @@
+.fundointegrado {
+    position: fixed; /* Fixa a imagem na tela, para que não role com o conteúdo */
+    top: 0;
+    left: 0;
+    width: 100%; /* Faz a largura cobrir toda a largura da viewport */
+    height: 100%; /* Faz a altura cobrir toda a altura da viewport */
+    z-index: -1; /* Coloca a imagem atrás de outros elementos */
+    overflow: hidden; /* Garante que nada vaze da div */
+}
+
+.fundointegrado img {
+    position: absolute; /* Posiciona a imagem dentro da div */
+    top: 0;
+    left: 0;
+    width: 100%; /* Faz a largura da imagem cobrir a largura da div */
+    height: 100%; /* Faz a altura da imagem cobrir a altura da div */
+    object-fit: cover; /* Preenche a div mantendo a proporção e cortando se necessário */
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.conteudo {
+    margin-top: 150px; /* Aumentei ainda mais a margem superior para mover o fieldset mais para baixo */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    background-color: white;
+}
+
+.conteudo legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #555;
+    padding: 0 10px;
+}
+
+.conteudo div {
+    margin-bottom: 10px;
+}
+
+.conteudo .botao-materia {
+    display: block;
+    background-color: #FF4500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.conteudo .botao-materia:hover {
+    background-color: darkred;
+    transition: 0.2s;
+}
+
+.texto-acima-menu {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.conteudo p {
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+h3{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
