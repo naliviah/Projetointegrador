@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Estatísticas Real Madrid</title>
+  <link rel="stylesheet" href="../css/matematica.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <a href="index.html" class="voltar-btn">Voltar</a>
+  <header>
+    <div class="header-container">
+      
+      <div class="titulo">
+        <h1>Estatísticas do Real Madrid</h1>
+        <p>Temporada 2024/2025</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Introdução</h2>
+      <p>Esta página apresenta uma análise estatística dos jogadores do Real Madrid na temporada atual.</p>
+    </section>
+
+    <section>
+      <h2>Gráficos de Desempenho</h2>
+      <div class="graficos-container">
+        <div class="grafico-wrapper">
+          <h3>Gols por Jogador</h3>
+          <canvas id="graficoGols"></canvas>
+        </div>
+        <div class="grafico-wrapper">
+          <h3>Média de Gols por Jogo</h3>
+          <canvas id="graficoMedia"></canvas>
+        </div>
+        <div class="grafico-wrapper">
+          <h3>Distribuição dos Gols de Vinícius</h3>
+          <canvas id="graficoVinicius"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section class="estatisticas-avancadas">
+      <h2>Análise Estatística Avançada</h2>
+      <ul>
+        <li><strong>Média de Gols:</strong> 12</li>
+        <li><strong>Mediana:</strong> 10</li>
+        <li><strong>Moda:</strong> N/A</li>
+        <li><strong>Desvio Padrão:</strong> 4.56</li>
+        <li><strong>Variância:</strong> 20.8</li>
+      </ul>
+      <p>Esses valores foram calculados com base nos gols marcados pelos principais jogadores nesta temporada.</p>
+    </section>
+
+    <section class="planilha">
+      <h2>Organização em Planilhas</h2>
+      <p>Utilizamos uma planilha para organizar os dados estatísticos dos jogadores e automatizar os cálculos.</p>
+      <div style="text-align: center; margin: 1rem 0;">
+        <img src="../planilhamat.png" alt="Planilha de dados" style="max-width: 100%; border: 1px solid #ccc; border-radius: 8px;">
+      </div>
+    </section>
+
+    <section class="financeiro">
+      <h2>Matemática Financeira no Futebol</h2>
+      <p>Aplicamos conceitos de matemática financeira para entender investimentos no elenco. Veja o exemplo abaixo:</p>
+      <ul>
+        <li>Investimento em Mbappé: €180 milhões</li>
+        <li>Juros compostos anuais: 5%</li>
+        <li>Valor após 3 anos: <strong>€208.99 milhões</strong></li>
+      </ul>
+      <p>Fórmula usada: <code>Valor Final = Valor Inicial × (1 + taxa)<sup>tempo</sup></code></p>
+    </section>
+
+    <!-- Seção de Vídeo -->
+    <section class="video">
+      <h2>Vídeo explicativo</h2>
+      <video width="100%" controls>
+        <source src="../video.mp4" type="video/mp4">
+        Seu navegador não suporta a tag de vídeo.
+      </video>
+    </section>
+
+    <!-- Seção de Áudio -->
+    <section class="audio">
+      <h2>Podcast</h2>
+      <audio controls>
+        <source src="../calculofc[1].m4a" type="audio/mp3">
+        Seu navegador não suporta a tag de áudio.
+      </audio>
+    </section>
+
+  </main>
+
+  <footer>
+   <p>Caio Mazini Viana - Projeto Integrador SESI/SENAI | 2025</p>
+  </footer>
+
+  <script>
+    const jogadores = ['Mbappé', 'Vinícius Jr', 'Bellingham', 'Rodrygo', 'Joselu'];
+    const gols = [22, 11, 8, 10, 9];
+    const jogos = [28, 25, 30, 26, 24];
+
+    new Chart(document.getElementById('graficoGols'), {
+      type: 'bar',
+      data: {
+        labels: jogadores,
+        datasets: [{
+          label: 'Gols Marcados',
+          data: gols,
+          backgroundColor: '#5c2d91'
+        }]
+      }
+    });
+
+    new Chart(document.getElementById('graficoMedia'), {
+      type: 'line',
+      data: {
+        labels: jogadores,
+        datasets: [{
+          label: 'Média de Gols por Jogo',
+          data: gols.map((g, i) => (g / jogos[i]).toFixed(2)),
+          borderColor: '#d4af37',
+          fill: false,
+          tension: 0.3
+        }]
+      }
+    });
+
+    new Chart(document.getElementById('graficoVinicius'), {
+      type: 'pie',
+      data: {
+        labels: ['Finalizações certas', 'Finalizações erradas'],
+        datasets: [{
+          data: [7, 4],
+          backgroundColor: ['#5c2d91', '#d4af37']
+        }]
+      }
+    });
+  </script>
+
+</body>
+</html>
