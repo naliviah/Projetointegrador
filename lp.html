@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modernismo no Brasil</title>
-    <link rel="stylesheet" href="lp.css">
+    <link rel="stylesheet" href="../css/lp.css">
 </head>
 
 <body>
@@ -22,36 +22,384 @@
     </script>
 
 
+<style>
+#cabecalho {
+  background-color: #b84482;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #dc4bac;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+fieldset {
+  border-radius: 1cap;
+  width: 200px;
+  border: 2px solid rgb(231, 231, 231);
+  padding: 30px;
+  margin: 0 auto;
+  background-color: rgba(240, 240, 240, 0.37);
+  box-shadow: 10px 10px 20px rgba(235, 235, 235, 0.5);
+}
+
+.video {
+  text-align: center;
+}
+
+img {
+  border-radius: none;
+  border: none;
+}
+
+h3 {
+  color: #b84482;
+}
+
+h4 {
+  color: #000000;
+}
+
+h5 {
+  color: #db4495;
+}
+
+p,
+a,
+strong,
+ul {
+  font-family: Arial, sans-serif;
+  color: #444;
+}
+
+h6 {
+  color: #757574;
+  text-align: center;
+  font-size: 60%;
+}
+
+.voltar-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #ff64db 0%, #ff00cc 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.voltar-btn:hover {
+  background: linear-gradient(135deg, #ff00cc 0%, #ff64db 100%);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  background-color: #dc4bac;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+footer p {
+  color: #fff;
+}
+
+button {
+  background-color: #b3198c;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #6e2a58;
+}
+
+.pergunta {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.pergunta p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.resposta {
+  margin-left: 20px;
+  padding: 5px 0;
+}
+
+.contexto-historico {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.contexto-historico p {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.contexto-historico img {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  width: 150px;
+  height: 200px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s;
+  flex-shrink: 0;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.9);
+}
+
+.info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.9);
+  color: white;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  overflow-y: auto;
+}
+
+.card:hover .info {
+  opacity: 1;
+}
+
+.info h5 {
+  margin-top: 0;
+  font-size: 11px;
+  border-bottom: 1px solid #ffffff44;
+  padding-bottom: 8px;
+}
+
+.info ul {
+  padding-left: 3px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.info li {
+  font-size: 10px;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+
+
+.notification-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.notification {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  background: rgba(240, 240, 240, 0.37);
+  border-radius: 1rem;
+  overflow: hidden;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  color: #333;
+  padding: 1rem 2rem;
+  box-shadow: 10px 10px 20px rgba(235, 235, 235, 0.5);
+
+  --gradient: linear-gradient(to bottom, #ca2f96, #a8257d, #ffffff);
+  --color:  #b84482;
+  margin: 0 auto;
+}
+
+.notification::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border: 2px solid rgb(231, 231, 231);
+  border-radius: 0.95rem;
+  z-index: 1;
+}
+
+.notification::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  top: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  background: var(--gradient);
+  border-radius: 4px;
+  transition: transform 300ms ease;
+  z-index: 3;
+}
+
+.notification:hover::after {
+  transform: translateX(0.25rem);
+}
+
+.notiglow,
+.notiborderglow {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle closest-side at center, white, transparent);
+  opacity: 0;
+  transition: opacity 300ms ease;
+  pointer-events: none;
+}
+
+.notiglow {
+  z-index: 0;
+}
+
+.notiborderglow {
+  z-index: 0;
+}
+
+.notification:hover .notiglow,
+.notification:hover .notiborderglow {
+  opacity: 0.1;
+}
+
+.notititle {
+  position: relative;
+  z-index: 4;
+  color: var(--color);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.notibody {
+  position: relative;
+  z-index: 4;
+  color: #444;
+  font-size: 15px;
+  padding-left: 2.5rem;
+}
+
+.notibody ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+.notibody li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.um{
+    width: 1000px;
+}
+</style>
 <header>
             <h1>Modernismo 3° Fase</h1>
            
           </header><br>
-    <fieldset>
+    <fieldset class="um">
 
-       
         <h3>Contexto histórico</h3>
-        <p>A terceira geração do modernismo brasileiro, também chamada de Geração de 45 ou fase pós-modernista, ocorreu
-            entre 1945 e aproximadamente 1980. Esse período em relação às demais gerações é caracterizado por ser o
-            menos conturbado.<br><br>
-            É a fase de redemocratização do país, visto que em 1945 termina o Estado Novo (1937-1945) que fora
-            implementado pela ditadura de Getúlio Vargas. Ao nível mundial, o ano de 1945 é também o fim da Segunda
-            Guerra Mundial e do sistema totalitário do Nazismo. Entretanto, tem início a Guerra Fria (Estados Unidos e
-            União Soviética) e a Corrida Armamentista.</p>
-        <h3>Características</h3>
-        <ul>
-            <li>Academicismo</li>
-            <li>Passadismo e retorno ao passado</li>
-            <li>Oposição à liberdade formal</li>
-            <li>Experimentações artísticas (ficção experimental)</li>
-            <li>Realismo fantástico (contos fantásticos)</li>
-            <li>Retorno à forma poética (valorização da métrica e da rima)</li>
-            <li>Influência do Parnasianismo e Simbolismo</li>
-            <li>Inovações linguísticas e metalinguagem</li>
-            <li>Regionalismo universal</li>
-            <li>Temática social e humana</li>
-            <li>Linguagem mais objetiva</li>
-        </ul>
+        <div class="contexto-historico">
+          <p>
+            A terceira geração do modernismo brasileiro, também chamada de Geração de 45 ou fase pós-modernista, ocorreu entre 1945 e aproximadamente 1980. Esse período em relação às demais gerações é caracterizado por ser o menos conturbado.<br><br>
+            É a fase de redemocratização do país, visto que em 1945 termina o Estado Novo (1937-1945) que fora implementado pela ditadura de Getúlio Vargas. Ao nível mundial, o ano de 1945 é também o fim da Segunda Guerra Mundial e do sistema totalitário do Nazismo. Entretanto, tem início a Guerra Fria (Estados Unidos e União Soviética) e a Corrida Armamentista.
+          </p>
+          <img  src="https://site.claricelispector.ims.com.br/wp-content/uploads/2020/05/clarice-lispector-por-jose-castello-scaled-1.jpg" alt="Clarice Lispector"  >
+        </div>
+    </fieldset><br>
+    
+       
+    <div class="notification-wrapper">
+        <div class="notification">
+          <div class="notiglow"></div>
+          <div class="notiborderglow"></div>
+          <div class="notititle">Características</div><br>
+          <div class="notibody">
+            <ul>
+              <li>Academicismo</li>
+              <li>Passadismo e retorno ao passado</li>
+              <li>Oposição à liberdade formal</li>
+              <li>Experimentações artísticas (ficção experimental)</li>
+              <li>Realismo fantástico (contos fantásticos)</li>
+              <li>Retorno à forma poética (valorização da métrica e da rima)</li>
+              <li>Influência do Parnasianismo e Simbolismo</li>
+              <li>Inovações linguísticas e metalinguagem</li>
+              <li>Regionalismo universal</li>
+              <li>Temática social e humana</li>
+              <li>Linguagem mais objetiva</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    
+       <br> 
+    <fieldset>
+        
 
         <h3>Prosa Modernista</h3>
         <p>O Modernismo no Brasil está dividido em três gerações, sendo a prosa o tipo de texto mais explorado na
@@ -83,58 +431,77 @@
 
         <h3>Autores e Obras</h3>
         <p>Os principais autores e obras dessa fase são:</p>
+        
+  <div class="container">
+    
+    <div class="card">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvBoksK1jK04mBeOOyzQYfBwtXFf_syKbLElOU33HoXVO704RU7EcCCmdVhY_aIyasiq0oPff5yhHiPzAqHGXn8Lu4jsxe8-6g6qhE2PjivZoMJDZvmTBpPCWJ3o6j4aBpsv4YOhgF7nja/s1600/Jo%25C3%25A3o+Cabral+de+Melo+Neto+%25C2%25A9+Oscar+Cabral.jpg" alt="João Cabral de Melo Neto">
+      <div class="info">
+        <h5>João Cabral de Melo <br>Neto</h5>
         <ul>
-            <li>
-                <strong>João Cabral de Melo Neto (1920-1999)</strong>: conhecido como “poeta engenheiro”, João se
-                destacou na prosa e na poesia pelo rigor estético apresentado em suas obras:
-                <ul>
-                    <li>"Pedra do Sono" (1942)</li>
-                    <li>"O Engenheiro" (1945)</li>
-                    <li>"Morte e Vida Severina" (1955)</li>
-                </ul><br>
-            </li>
-            <li>
-                <strong>Clarice Lispector (1920-1977)</strong>: se destacou na prosa e na poesia com um caráter lírico e
-                intimista:
-                <ul>
-                    <li>"Perto do Coração Selvagem" (1947)</li>
-                    <li>"A Cidade Sitiada" (1949)</li>
-                    <li>"A Paixão Segundo GH" (1964)</li>
-                    <li>"A Hora da Estrela" (1977)</li>
-                </ul><br>
-            </li>
-            <li>
-                <strong>João Guimarães Rosa (1908-1967)</strong>: foi um dos maiores poetas do Brasil, sendo que a
-                maioria de suas obras são ambientadas no sertão. Destacam-se:
-                <ul>
-                    <li>"Sagarana" (1946)</li>
-                    <li>"Corpo de Baile" (1956)</li>
-                    <li>"Grande Sertão: Veredas" (1956)</li>
-                    <li>"Primeiras Estórias" (1962)</li>
-                </ul><br>
-            </li>
-            <li>
-                <strong>Ariano Suassuna (1927-2014)</strong>: Defensor da cultura popular brasileira, Suassuna escreveu
-                romances, peças de teatro e poesias dos quais se destacam:
-                <ul>
-                    <li>"Os homens de barro" (1949)</li>
-                    <li>"Auto de João da Cruz" (1950)</li>
-                    <li>"O Rico Avarento" (1954)</li>
-                    <li>"O Auto da Compadecida" (1955)</li>
-                </ul><br>
-            </li>
-            <li>
-                <strong>Lygia Fagundes Telles (1923-2022)</strong>: escreveu romances, contos e poesias, sendo uma de suas
-                marcas a exploração psicológica das personagens em sua obra:
-                <ul>
-                    <li>"Ciranda de Pedra" (1954)</li>
-                    <li>"Verão no Aquário" (1964)</li>
-                    <li>"Antes do Baile Verde" (1970)</li>
-                    <li>"As Meninas" (1973)</li>
-                </ul><br>
-            </li>
+          <li>Pedra do Sono (1942)</li>
+          <li>O Engenheiro (1945)</li>
+          <li>Morte e Vida Severina <br>(1955)</li>
         </ul>
+      </div>
+    </div>
 
+    
+    <div class="card">
+      <img src="https://s2-g1.glbimg.com/Qd0kwciwl1lqXDGDgZAdIl4J7cU=/0x0:1080x1920/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/1/y/fnGg8lTk6uZtxFAAd1vg/design-sem-nome-50-.png" alt="Clarice Lispector">
+      <div class="info">
+        <h5>Clarice Lispector</h5>
+        <ul>
+          <li>Perto do Coração Selvagem <br>(1947)</li>
+          <li>A Cidade Sitiada (1949)</li>
+          <li>A Paixão Segundo GH <br>(1964)</li>
+          <li>A Hora da Estrela (1977)</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div class="card">
+      <img src="https://correio.ims.com.br/wp-content/uploads/2021/06/20180502-guimaraes-rosa.jpg" alt="João Guimarães Rosa">
+      <div class="info">
+        <h5>João Guimarães Rosa</h5>
+        <ul>
+          <li>Sagarana (1946)</li>
+          <li>Corpo de Baile (1956)</li>
+          <li>Grande Sertão: Veredas <br>(1956)</li>
+          <li>Primeiras Estórias (1962)</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div class="card">
+      <img src="https://s2-valor.glbimg.com/pWnAVPat5Wkt20317taz4KPR9l0=/0x0:2550x3840/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2025/2/e/AQMEGgTwA9Ug91JodLcA/200411ariano20.jpg" alt="Ariano Suassuna">
+      <div class="info">
+        <h5>Ariano Suassuna</h5>
+        <ul>
+          <li>Os Homens de Barro <br>(1949)</li>
+          <li>Auto de João da Cruz<br> (1950)</li>
+          <li>O Rico Avarento <br>(1954)</li>
+          <li>O Auto da Compadecida<br> (1955)</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Lygia_Fagundes_Telles_-_MinC_%287%29_cropped.jpg" alt="Lygia Fagundes Telles">
+      <div class="info">
+        <h5>Lygia Fagundes Telles</h5>
+        <ul>
+          <li>Ciranda de Pedra (1954)</li>
+          <li>Verão no Aquário (1964)</li>
+          <li>Antes do Baile Verde <br>(1970)</li>
+          <li>As Meninas (1973)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
         <h3>Vídeo sobre as obras que mais caem no vestibular #ficaadica</h3>
         
 <div class="video">
@@ -161,64 +528,100 @@
         </ul>
 
     <h3>Mapa mental com o resumo do período</h3>
-    <img class="Imagem" src="mapa.png.png" width="950"><br>
+   
+    <img class="imagem" src="mapalp.png" alt="Mapa mental" width="1000px"><br>
     <a href="mapa.pdf" download>Baixe aqui</a>
 
  
 
     <h4>Exercícios</h4>
 
-    <div class="pergunta">
-        <p><strong>1. Qual das seguintes características descreve melhor a Terceira Fase do Modernismo no Brasil?</strong></p>
-        <div class="resposta">a) A busca por uma poesia experimental e a liberdade formal.</div>
-        <div class="resposta">b) A ruptura total com as tradições literárias e a ênfase no experimentalismo radical.</div>
-        <div class="resposta">c) O equilíbrio entre forma e conteúdo, com influência do Parnasianismo e Simbolismo.</div>
-        <div class="resposta">d) O predomínio de temas populares e folclóricos, com uma linguagem simples e coloquial.</div>
-      </div>
-   
-      <div class="pergunta">
-        <p><strong>2. Qual das seguintes obras não pertence à Terceira Fase do Modernismo no Brasil?</strong></p>
-        <div class="resposta">a) "Morte e Vida Severina" de João Cabral de Melo Neto.</div>
-        <div class="resposta">b) "Grande Sertão: Veredas" de Guimarães Rosa.</div>
-        <div class="resposta">c) "Os Sertões" de Euclides da Cunha.</div>
-        <div class="resposta">d) "A Hora da Estrela" de Clarice Lispector.</div>
-      </div>
-   
-      <div class="pergunta">
-        <p><strong>3. A prosa regionalista da Terceira Fase do Modernismo no Brasil é mais característica de autores como:</strong></p>
-        <div class="resposta">a) Clarice Lispector e Lygia Fagundes Telles.</div>
-        <div class="resposta">b) João Cabral de Melo Neto e Ariano Suassuna.</div>
-        <div class="resposta">c) Guimarães Rosa e João Cabral de Melo Neto.</div>
-        <div class="resposta">d) Mário de Andrade e Manuel Bandeira.</div>
-      </div>
-   
-      <div class="pergunta">
-        <p><strong>4. A Terceira Fase do Modernismo no Brasil apresenta uma forte influência do Parnasianismo e do Simbolismo, mas ao mesmo tempo mantém a liberdade artística do Modernismo. Qual autor dessa fase reflete essa característica em suas obras?</strong></p>
-        <div class="resposta">a) Mário de Andrade.</div>
-        <div class="resposta">b) João Cabral de Melo Neto.</div>
-        <div class="resposta">c) Oswald de Andrade.</div>
-        <div class="resposta">d) Manuel Bandeira.</div>
-      </div>
-   
-      <div class="pergunta">
-        <p><strong>5. Quais movimentos literários influenciaram diretamente a poesia da Terceira Fase do Modernismo, com destaque para o trabalho visual e experimental dos poemas?</strong></p>
-        <div class="resposta">a) Simbolismo e Barroco.</div>
-        <div class="resposta">b) Concretismo e Neoconcretismo.</div>
-        <div class="resposta">c) Romantismo e Realismo.</div>
-        <div class="resposta">d) Parnasianismo e Surrealismo.</div>
-      </div><br>
-<h4>Gabarito</h4>
+<form id="quizForm">
 
-<ul>
-    <li>1 - c</li>
-    <li>2 - c</li>
-    <li>3 - c</li>
-    <li>4 - b</li>
-    <li>5 - b</li>
-   
-  </ul>
+  <div class="pergunta">
+    <p>1. Qual das seguintes características descreve melhor a Terceira Fase do Modernismo no Brasil?</p>
+    <label><input type="radio" name="question1" value="a"> a) A busca por uma poesia experimental e a liberdade formal.</label><br>
+    <label><input type="radio" name="question1" value="b"> b) A ruptura total com as tradições literárias e a ênfase no experimentalismo radical.</label><br>
+    <label><input type="radio" name="question1" value="c"> c) O equilíbrio entre forma e conteúdo, com influência do Parnasianismo e Simbolismo.</label><br>
+    <label><input type="radio" name="question1" value="d"> d) O predomínio de temas populares e folclóricos, com uma linguagem simples e coloquial.</label><br>
+  </div>
 
-   
+  <div class="pergunta">
+    <p>2. Qual das seguintes obras não pertence à Terceira Fase do Modernismo no Brasil?</p>
+    <label><input type="radio" name="question2" value="a"> a) "Morte e Vida Severina" de João Cabral de Melo Neto.</label><br>
+    <label><input type="radio" name="question2" value="b"> b) "Grande Sertão: Veredas" de Guimarães Rosa.</label><br>
+    <label><input type="radio" name="question2" value="c"> c) "Os Sertões" de Euclides da Cunha.</label><br>
+    <label><input type="radio" name="question2" value="d"> d) "A Hora da Estrela" de Clarice Lispector.</label><br>
+  </div>
+
+  <div class="pergunta">
+    <p>3. A prosa regionalista da Terceira Fase do Modernismo no Brasil é mais característica de autores como:</p>
+    <label><input type="radio" name="question3" value="a"> a) Clarice Lispector e Lygia Fagundes Telles.</label><br>
+    <label><input type="radio" name="question3" value="b"> b) João Cabral de Melo Neto e Ariano Suassuna.</label><br>
+    <label><input type="radio" name="question3" value="c"> c) Guimarães Rosa e João Cabral de Melo Neto.</label><br>
+    <label><input type="radio" name="question3" value="d"> d) Mário de Andrade e Manuel Bandeira.</label><br>
+  </div>
+
+  <div class="pergunta">
+    <p>4. A Terceira Fase do Modernismo no Brasil apresenta uma forte influência do Parnasianismo e do Simbolismo, mas ao mesmo tempo mantém a liberdade artística do Modernismo. Qual autor dessa fase reflete essa característica em suas obras?</p>
+    <label><input type="radio" name="question4" value="a"> a) Mário de Andrade.</label><br>
+    <label><input type="radio" name="question4" value="b"> b) João Cabral de Melo Neto.</label><br>
+    <label><input type="radio" name="question4" value="c"> c) Oswald de Andrade.</label><br>
+    <label><input type="radio" name="question4" value="d"> d) Manuel Bandeira.</label><br>
+  </div>
+
+  <div class="pergunta">
+    <p>5. Quais movimentos literários influenciaram diretamente a poesia da Terceira Fase do Modernismo, com destaque para o trabalho visual e experimental dos poemas?</p>
+    <label><input type="radio" name="question5" value="a"> a) Simbolismo e Barroco.</label><br>
+    <label><input type="radio" name="question5" value="b"> b) Concretismo e Neoconcretismo.</label><br>
+    <label><input type="radio" name="question5" value="c"> c) Romantismo e Realismo.</label><br>
+    <label><input type="radio" name="question5" value="d"> d) Parnasianismo e Surrealismo.</label><br>
+  </div>
+
+  <br>
+  <button type="button" onclick="checkAnswers()">Verificar respostas</button>
+
+</form>
+
+<div id="result" style="display:none; margin-top: 20px;">
+  <p id="feedback"></p>
+</div>
+
+<script>
+  function checkAnswers() {
+    var score = 0;
+
+    var q1 = document.querySelector('input[name="question1"]:checked');
+    if (q1 && q1.value === 'c') score++;
+
+    var q2 = document.querySelector('input[name="question2"]:checked');
+    if (q2 && q2.value === 'c') score++;
+
+    var q3 = document.querySelector('input[name="question3"]:checked');
+    if (q3 && q3.value === 'c') score++;
+
+    var q4 = document.querySelector('input[name="question4"]:checked');
+    if (q4 && q4.value === 'b') score++;
+
+    var q5 = document.querySelector('input[name="question5"]:checked');
+    if (q5 && q5.value === 'b') score++;
+
+    var feedback = document.getElementById('feedback');
+    var resultSection = document.getElementById('result');
+    resultSection.style.display = 'block';
+
+    if (score === 5) {
+      feedback.textContent = 'Parabéns! Você acertou todas as perguntas.';
+    } else if (score >= 3) {
+      feedback.textContent = `Bom trabalho! Você acertou ${score} de 5 perguntas.`;
+    } else if (score >= 1) {
+      feedback.textContent = `Você acertou ${score} de 5. Continue praticando!`;
+    } else {
+      feedback.textContent = 'Você não acertou nenhuma. Não desista e tente novamente!';
+    }
+  }
+</script>
+
 
     </fieldset>
     <footer>
