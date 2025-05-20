@@ -4,6 +4,13 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', sans-serif;
   }
+
+  head {
+    background-color: #5c2d91;
+    color: gold;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
   
   body {
     background-color: #ffffff;
@@ -16,13 +23,6 @@
     color: gold;
     text-align: center;
     padding: 2rem 1rem;
-  }
-  
-  .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 1rem;
   }
   
   .logoreal {
