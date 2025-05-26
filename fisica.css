@@ -118,7 +118,7 @@ audio {
     top: 20px;
     left: 20px;
     padding: 12px 25px;
-    background: linear-gradient(135deg, #ba0d0d 0%, #ba0d0d 100%); 
+    background: linear-gradient(#0077cc); 
     color: white;
     border: none;
     border-radius: 8px;
