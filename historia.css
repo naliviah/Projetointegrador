@@ -197,17 +197,7 @@ footer {
   margin: 0 auto 40px auto;
 }
 
-/* style.css */
-.ultimamanchete {
-  max-width: 1020px;
-  margin: 0 auto 40px auto;
-}
 
-.ultimamanchete > img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
 
 .personagens-destaque {
   display: flex;
@@ -242,5 +232,148 @@ footer {
   .personagens-destaque div {
     width: 80%;
     margin: 10px 0;
+  }
+}
+h3 {
+  margin-top: 0;
+  color: #555;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: #bbb;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #bbb;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: "◀";
+  position: absolute;
+  top: 18px;
+  right: 30px;
+  font-size: 18px;
+  color: #bbb;
+  z-index: 1;
+}
+
+.right::before {
+  content: "▶";
+  position: absolute;
+  top: 18px;
+  left: 30px;
+  font-size: 18px;
+  color: #bbb;
+  z-index: 1;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* No seu arquivo historia.css */
+
+.card {
+  width: 150px; /* Reduzi a largura dos cards para 150px */
+  height: 200px; /* Reduzi a altura dos cards para 200px (ajustar conforme proporção da imagem) */
+  border: none;
+  box-shadow: none;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0; /* Continua sem margem inferior quando lado a lado */
+}
+
+/* IMPORTANTE: Ajustar a media query para telas menores */
+/* No seu arquivo historia.css */
+
+/* Ajuste do container para centralizar e espaçar melhor */
+.personagens-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Centraliza os cards */
+  align-items: center;
+  max-width: 900px; /* Aumentei o max-width para dar mais espaço, mas mantendo um limite */
+  margin: 20px auto;
+  gap: 30px; /* Adicionei um espaço entre os cards para não ficarem colados */
+  flex-wrap: wrap; /* Para quebra de linha em telas menores */
+}
+
+.card {
+  width: 220px; /* Aumentei a largura dos cards */
+  height: 300px; /* Aumentei a altura dos cards (ajustar conforme proporção da imagem) */
+  border: 1px solid #b8860b; /* Adicionei uma borda para destacá-los */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adicionei uma sombra para dar profundidade */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0; /* Continua sem margem inferior quando lado a lado */
+  transition: transform 0.3s ease; /* Adicionei uma transição para efeito hover */
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem cubra o card sem distorcer */
+}
+
+/* Efeito ao passar o mouse */
+.card:hover {
+  transform: translateY(-5px); /* Move o card ligeiramente para cima no hover */
+}
+
+/* IMPORTANTE: Ajustar a media query para telas menores */
+@media (max-width: 800px) {
+  .personagens-container {
+      flex-direction: column; /* Em telas menores, eles voltam a ficar um embaixo do outro */
+      align-items: center;
+      gap: 20px; /* Espaço entre os cards empilhados */
+  }
+
+  .card {
+      width: 80%; /* Ajustei a largura para ser responsiva em telas pequenas */
+      height: auto; /* Deixe a altura automática para manter a proporção da imagem */
+      margin-bottom: 0; /* A margem já é controlada pelo gap no container */
   }
 }
