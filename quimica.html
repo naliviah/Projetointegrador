@@ -2,22 +2,39 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Química Orgânica no Prato</title>
+    <meta name="description"
+        content="Site educativo sobre compostos orgânicos e reações químicas presentes nos alimentos." />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* Imagens pequenas dentro das seções */
+        section img {
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+            border-radius: 8px;
+        }
 
-    <link rel="stylesheet" href="quimica.css">
+        /* Mantém o mapa mental grande */
+        img.padrao {
+            max-width: 700px;
+            width: 100%;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
-    <a href="index.html" class="voltar-btn">Voltar</a>
-    <!-- Cabeçalho -->
     <header>
         <h1>Química Orgânica no Prato</h1>
-        <p>Entenda a Quimica por trás do que você come!</p>
+        <p>Entenda a Química por trás do que você come!</p>
     </header>
 
-    <!-- Menu de navegação -->
     <nav>
         <a href="#compostos">Compostos Orgânicos</a>
         <a href="#reacoes">Reações na Cozinha</a>
@@ -25,122 +42,114 @@
         <a href="#experimentos">Experimentos</a>
     </nav>
 
-    <h1>🗺 Mapa Mental</h1>
-    <img class="padrao" src="Doodle Sketch Marketing Mind Map Brainstorm.png" alt="" width="700">
-    <!-- Seção de Compostos Orgânicos -->
+    <h1 style="text-align: center;">🗺 Mapa Mental</h1>
+    <img class="padrao" src="Doodle Sketch Marketing Mind Map Brainstorm.png"
+        alt="Mapa mental com conceitos de química e alimentação" width="700" />
+
     <section id="compostos">
         <h2>🧪 Compostos Orgânicos nos Alimentos</h2>
 
         <div class="bloco">
             <h3>🥖 Carboidratos</h3>
-            <img src="atualizado.png" alt="Carboidratos" width="700">
-            <p>Os carboidratos são compostos orgânicos formados por carbono (C), hidrogênio (H) e oxigênio (O), com uma
-                razão empírica de 1:2:1. Eles são classificados em monossacarídeos (como glicose), dissacarídeos (como
-                sacarose) e polissacarídeos (como amido e celulose). Carboidratos são importantes fontes de energia e
-                participam de reações químicas na cozinha, como a caramelização e a reação de Maillard, que são
-                responsáveis pela cor e sabor dos alimentos assados.</p>
+            <img src="atualizado.png" alt="Imagem representando carboidratos nos alimentos" />
+            <p>Os carboidratos são compostos formados por carbono, hidrogênio e oxigênio. Eles são classificados em:
+                monossacarídeos (como a glicose), dissacarídeos (como a sacarose) e polissacarídeos (como o amido e a celulose). São a principal fonte de energia rápida do organismo. Quando ingeridos, os carboidratos são quebrados em glicose, que é absorvida pelo intestino e transportada até as células para gerar energia através da respiração celular.
+                Na culinária, participam de reações importantes como a caramelização e a Reação de Maillard. Carboidratos também são essenciais na fermentação, como na produção de pães e bebidas alcoólicas.</p>
         </div>
 
         <div class="bloco">
             <h3>🍗 Proteínas</h3>
-            <img src="comidas.png" alt="Proteínas" width="700">
-            <p>As proteínas são biopolímeros formados por aminoácidos, e desempenham funções vitais no organismo, como
-                enzimas, hormônios e elementos estruturais. No preparo de alimentos, as proteínas podem sofrer
-                desnaturação, alterando sua estrutura tridimensional, como no caso do cozimento de ovos, onde a clara se
-                torna sólida e opaca.</p>
+            <img src="comidas.png" alt="Imagem ilustrando proteínas em alimentos como carnes e ovos" />
+            <p>As proteínas são formadas por cadeias de aminoácidos unidos por ligações peptídicas. Elas desempenham papéis estruturais (como no tecido muscular), funcionais (como as enzimas e hormônios), e imunológicos (como anticorpos). Ao serem aquecidas, as proteínas sofrem desnaturação, perdendo sua estrutura tridimensional e alterando sua funcionalidade. Essa transformação é visível, por exemplo, quando a clara de ovo fica branca ao cozinhar. A Química explica também a digestão das proteínas: elas são quebradas por enzimas como a pepsina e a tripsina, gerando aminoácidos que serão usados na construção de novas proteínas pelo corpo.</p>
         </div>
 
         <div class="bloco">
             <h3>🥑 Lipídios</h3>
-            <img src="lipidios.png" alt="Lipídios" width="700">
-            <p>Os lipídios são compostos orgânicos que funcionam como reserva energética e formam componentes essenciais
-                das membranas celulares. Eles podem ser encontrados em alimentos como óleos, manteiga e carnes. Durante
-                o preparo, lipídios podem sofrer oxidação, o que pode levar ao ranço, alterando o sabor e a qualidade
-                nutricional.</p>
+            <img src="lipidios.png" alt="Imagem de alimentos ricos em lipídios como abacate e óleos" />
+            <p>Os lipídios são compostos orgânicos apolares, insolúveis em água, e servem como reserva energética, isolantes térmicos e estruturais (formando membranas celulares). Eles estão presentes em óleos, gorduras, manteigas, sementes, carnes e abacates. Além de fornecerem energia, auxiliam na absorção de vitaminas lipossolúveis (A, D, E e K). Quando oxidados pelo calor e pelo ar, sofrem rancificação, o que compromete o sabor e o aroma dos alimentos. A composição química dos lipídios (saturados ou insaturados) influencia diretamente sua estabilidade e seus efeitos na saúde.</p>
         </div>
 
         <div class="bloco">
             <h3>🍊 Vitaminas</h3>
-            <img src="alta qualidade.png" alt="Vitaminas" width="700">
-            <p>As vitaminas são compostos essenciais para o organismo e são divididas em lipossolúveis (A, D, E, K) e
-                hidrossolúveis (complexo B, C). Elas desempenham papéis cruciais no metabolismo e em funções biológicas,
-                como antioxidantes e reguladoras do cálcio. As vitaminas têm estruturas químicas complexas, e algumas,
-                como a vitamina C, são sensíveis ao calor e à luz, o que pode resultar em perdas nutricionais.</p>
+            <img src="alta qualidade.png" alt="Frutas e vegetais fontes de vitaminas" />
+            <p>As vitaminas são micronutrientes indispensáveis ao funcionamento do corpo, atuando como cofatores em diversas reações químicas. Elas se dividem em dois grupos:
+                <br><br>
+                <strong>Hidrossolúveis:</strong> como as do complexo B e a vitamina C, que não são armazenadas e precisam ser repostas diariamente.
+                <br>
+                <strong>Lipossolúveis:</strong> como as vitaminas A, D, E e K, que são absorvidas junto com os lipídios e podem ser armazenadas no fígado.
+                <br><br>
+                O preparo dos alimentos pode degradar as vitaminas — especialmente a C e as do complexo B. A vitamina A é mais resistente ao calor, mas ainda sofre perdas com o cozimento prolongado. Já a vitamina D pode ser obtida pela exposição solar, além da alimentação. A vitamina K está presente em folhas verde-escuras e é essencial para a coagulação sanguínea.</p>
         </div>
     </section>
 
-    <!-- Seção de Reações Químicas -->
     <section id="reacoes">
         <h2>🔥 Reações Químicas na Cozinha</h2>
-        <img class="padrao" src="reaçoes quimicas.webp" alt="Vitaminas" width="700">
+        <img class="padrao" src="reaçoes quimicas.webp"
+            alt="Imagem mostrando reações químicas em alimentos sendo preparados" />
 
         <div class="bloco">
-            <p>As reações químicas são transformações em que substâncias iniciais (reagentes) se convertem em novas
-                substâncias (produtos) por meio da reorganização de ligações químicas. As principais reações químicas
-                que ocorrem no preparo de alimentos incluem:</p>
+            <p>A Química Orgânica se manifesta claramente nas transformações que ocorrem no preparo dos alimentos. Entre as principais reações, destacam-se:</p>
             <ul>
-                <li><strong>Caramelização:</strong> Decomposição térmica de açúcares, como a sacarose, resultando na
-                    formação de compostos dourados e aromáticos.</li>
-                <li><strong>Reação de Maillard:</strong> Interação entre açúcares redutores e aminoácidos, responsável
-                    pela cor e aroma dos alimentos assados.</li>
-                <li><strong>Desnaturação Proteica:</strong> Alteração da estrutura tridimensional das proteínas com o
-                    calor, como no cozimento de ovos.</li>
-                <li><strong>Oxidação Lipídica:</strong> Oxidação dos lipídios que leva ao ranço e à perda de qualidade
-                    nos alimentos.</li>
-                <li><strong>Degradação de Vitaminas:</strong> Perda de vitaminas sensíveis ao calor e à luz, como a
-                    vitamina C, durante o preparo.</li>
+                <li><strong>Caramelização:</strong> Reação térmica dos açúcares, que resulta em compostos com sabor e coloração intensos.</li>
+                <li><strong>Reação de Maillard:</strong> Interação entre açúcares redutores e aminoácidos, comum em alimentos assados e grelhados.</li>
+                <li><strong>Desnaturação de proteínas:</strong> Alteração da estrutura proteica pelo calor ou pH.</li>
+                <li><strong>Oxidação lipídica:</strong> Processo que leva à rancificação, prejudicando a qualidade dos alimentos.</li>
+                <li><strong>Perda de vitaminas:</strong> Vitaminas sensíveis ao calor e à luz sofrem degradação durante o cozimento.</li>
             </ul>
         </div>
     </section>
 
-    <!-- Seção de Formas de Aprender -->
     <section id="linguagens">
         <h2>🎭 Formas de Aprender</h2>
-
         <div class="bloco">
-            <p>O aprendizado pode ser mais eficaz quando combinamos diferentes métodos. Por exemplo, um estudante pode
-                aprender sobre um conceito primeiro por meio de uma aula expositiva, depois consolidá-lo escrevendo um
-                resumo e, finalmente, aplicar o que aprendeu criando um infográfico ou vídeo.</p>
-            <p>Essa abordagem ativa e colaborativa torna o aprendizado dinâmico e adaptável às necessidades dos
-                estudantes.</p>
+            <p>A aprendizagem é mais eficaz quando abordada por diferentes linguagens. Assistir a vídeos, realizar experiências, construir mapas mentais e explicar conceitos para outras pessoas são formas de consolidar o conhecimento. A Química Orgânica, por estar presente na alimentação e no cotidiano, pode ser aprendida de maneira divertida, com experimentos, ilustrações, receitas e até música!</p>
         </div>
     </section>
 
-    <!-- Seção de Experimentos e Curiosidades -->
     <section id="experimentos">
         <h2>🔬 Experimentos e Curiosidades</h2>
-        <img class="padrao" src="experimento.png" alt="Vitaminas" width="700">
+        <img class="padrao" src="experimento.png" alt="Experimento caseiro com ovos e açúcar" />
 
         <div class="bloco">
-            <p>A Química Orgânica está presente em diversas situações cotidianas, especialmente no preparo de alimentos.
-                Realizar experimentos simples permite observar como compostos orgânicos se comportam em diferentes
-                condições.</p>
+            <p>A Química está presente em ações simples do dia a dia, especialmente na cozinha. Pequenos experimentos caseiros permitem observar reações químicas importantes de forma prática e segura, despertando o interesse pela ciência de forma lúdica e educativa.</p>
+
+            <h3>🧪 Experimentos Caseiros:</h3>
             <ul>
-                <li>Caramelização do açúcar.</li>
-                <li>Desnaturação de ovo cozido.</li>
+                <li><strong>Caramelização do açúcar:</strong> Aqueça o açúcar em uma panela e observe sua transformação em caramelo.</li>
+                <li><strong>Clara de ovo + limão:</strong> Pingue limão na clara crua e observe a desnaturação das proteínas.</li>
+                <li><strong>Fermentação:</strong> Fermento + água + açúcar → formação de bolhas de CO₂.</li>
+                <li><strong>Oxidação da maçã:</strong> Corte uma maçã e veja como escurece ao contato com o ar.</li><br>
             </ul>
-            <h3>Curiosidades Científicas:</h3>
+
+            <h3>🧠 Curiosidades Científicas:</h3>
             <ul>
-                <li>Alteração da estrutura das proteínas com o calor.</li>
-                <li>Impacto do calor e oxigênio na degradação de vitaminas.</li>
-                <img src="../quimica.png" alt="Vitaminas" width="700">
+                <li>Proteínas mudam de estrutura com o calor — processo chamado desnaturação.</li>
+                <li>Fermentação transforma açúcares em gás e álcool — base da panificação e da cerveja.</li>
+                <li>Vitaminas C e B são facilmente degradadas pelo calor e pela luz.</li>
+                <li>Reações de Maillard criam sabores e aromas complexos em carnes e pães.</li>
+                <li>Gorduras insaturadas oxidam facilmente, resultando em rancificação.</li>
+                <li>O cérebro consome cerca de 120g de glicose por dia — vinda dos carboidratos.</li>
             </ul>
+
+            <p>Essas experiências mostram como a Química está presente em nossas refeições e como entender essas reações ajuda a valorizar o alimento e o conhecimento científico!</p>
+            <img src="quimica.png" alt="Curiosidades sobre compostos orgânicos nos alimentos" />
         </div>
     </section>
 
     <div class="podcast">
         <h2>🎧 Podcast Quimicast 🎤</h2>
         <audio controls>
-            <source src="quimicast.m4a" type="audio/mpeg">
-            Audio indisponivel
+            <source src="quimicast.m4a" type="audio/mp4" />
+            <source src="quimicast.m4a" type="audio/mpeg" />
+            Áudio indisponível
         </audio>
     </div>
 
-
-    <!-- Rodapé -->
     <footer>
-        <p>Diego Santiago da Silva - Projeto Integrador SESI/SENAI | 2025</p>
+        <p>Diego Santiago da Silva – Projeto Escolar de Química | SESI e SENAI | 2025</p>
     </footer>
+
+    <!-- VLibras -->
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
