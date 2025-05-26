@@ -1,82 +1,143 @@
-/* Estilos gerais do site */
-body {
-    font-family: Arial, sans-serif;
+ /* Reset básico */
+* {
     margin: 0;
-    background-color: #6e6eb3;
-    color: #333;
-}
-
-header {
-    background-color: #42496f;
-    color: rgb(109, 248, 28);
-    padding: 30px 20px;
-    text-align: center;
-}
-
-nav {
-    background-color: #6574d3;
-    padding: 10px;
-}
-
-.padrao {
-    margin-left: 20px;
-}
-
-img:hover {
-    transform: scale(1.1);
-}
-
-.podcast {
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
     padding: 0;
-    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
     text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
+    background-color: #4fac52;
     color: white;
-    text-decoration: none;
-    font-weight: bold;
+    padding: 30px 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
 
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 nav a {
-    margin-right: 20px;
+    background-color: #2f6d32;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
-main {
-    padding: 40px 20px;
+nav a:hover {
+    background-color: #2E7D32;
 }
 
+/* Seções */
 section {
-    margin: 40px 0;
+    margin-bottom: 40px;
 }
 
-h2 {
-    color: #05ff05;
+section h2 {
+    font-size: 2em;
+    color: #2E7D32;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .bloco {
     background-color: white;
-    padding: 20px;
-    margin: 20px 0;
+    border-left: 5px solid #81C784;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(101, 255, 5, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
-footer {
-    background-color: #3f51b5;
-    color: white;
+.bloco h3 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.bloco img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.bloco ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.bloco ul li {
+    margin-bottom: 8px;
+}
+
+/* Podcast */
+.podcast {
     text-align: center;
-    padding: 15px;
-    margin-top: 40px;
+    background-color: #E8F5E9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.podcast h2 {
+    color: #2E7D32;
+    margin-bottom: 15px;
+}
+
+/* Imagens padrões */
+.padrao {
+    max-width: 30%;
+    height: auto;
+    margin: 15px auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    padding: 20px 10px;
+    border-top: 1px solid #ccc;
+}
+
+/* Responsivo básico */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 80%;
+        text-align: center;
+    }
 }
