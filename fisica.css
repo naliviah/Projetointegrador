@@ -15,7 +15,7 @@ body {
 }
 
 /* Cabeçalho */
-header {
+#header {
   background-color: #0077cc;
   color: #fff;
   padding: 2rem 1rem;
@@ -131,6 +131,7 @@ audio {
   .voltar-btn:hover {
     background: linear-gradient(135deg, #ba0d0d  0%, #ba0d0d 100%); /* Inverte o gradiente no hover */
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada no hover */
+  }
 
 /* Rodapé */
 footer {
