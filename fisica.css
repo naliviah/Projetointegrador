@@ -110,7 +110,7 @@ audio {
   }
   
   .voltar-btn:hover {
-    background: linear-gradient(135deg, #ba0d0d  0%, #ba0d0d 100%); /* Inverte o gradiente no hover */
+    background:  #0077cc;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada no hover */
   }
 
