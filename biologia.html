@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biologia</title>
-    <link rel="stylesheet" href="
-        biologia.css">
 
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
@@ -18,84 +17,512 @@
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
+
+    <style>
+        :root {
+    --primary-color: #216839;
+    --secondary-color: #d1eecf;
+    --accent-color: #e74c3c;
+    --light-bg: #e1f8e8;
+    --dark-bg: #216839;
+    --text-color: #333;
+    --light-text: #f8f8f8;
+    --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 6px 15px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    --border-radius-sm: 8px;
+    --border-radius-md: 15px;
+    --border-radius-lg: 20px;
+}
+
+b,
+strong,
+h4 {
+    color: #066323;
+}
+
+
+p {
+    text-align: justify;
+}
+
+.caracteristicas-list {
+    list-style: none;
+}
+
+
+.opc {
+    color: #5fa475;
+}
+
+.caracteristicas-list li {
+    margin-bottom: 1.5rem;
+    padding: 1.2rem;
+    border-radius: var(--border-radius-sm);
+    background-color: var(--light-bg);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-fast);
+    border-left: 3px solid transparent;
+}
+
+
+#caracteristicas .caracteristicas-list li:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow-md);
+    border-left: 3px solid var(--primary-color);
+}
+
+
+#producoes .caracteristicas-list li:hover {
+    transform: translateX(-5px);
+    box-shadow: var(--shadow-md);
+    border-left: 3px solid var(--secondary-color);
+}
+
+.caracteristicas-list h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+
+#producoes .caracteristicas-list h4 {
+    color: var(--secondary-color);
+}
+
+
+#mapa2 {
+    height: 400px;
+}
+
+
+#nematoide2,
+#mapa2 {
+    border-radius: 30px;
+}
+
+
+#tabela2 {
+    border-radius: 20px;
+    width: 80%;
+}
+
+
+#video2 {
+    border-radius: 10px;
+}
+
+
+#nematoide,
+#mapa,
+#tabela {
+    text-align: center;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+
+h2 {
+    color: #216839;
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+}
+
+
+h2 {
+    font-size: 2rem;
+}
+
+
+ul {
+    list-style: square inside;
+    margin-bottom: 1rem;
+}
+
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+video {
+    margin: 1rem auto;
+    display: block;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+fieldset {
+    border: 2px solid #216839;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    margin-left: 16%;
+}
+
+
+
+#mapa,
+#tabela {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #216839;
+    margin: 2rem 0;
+}
+
+
+.question {
+    background-color: #ffffff;
+    border: 1px solid #dcdde1;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.options li {
+    padding: 0.5rem;
+}
+
+
+table {
+    width: 30%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+thead th {
+    background-color: #216839;
+    color: #ffffff;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+
+tbody td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+}
+
+
+
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+#p1 {
+    text-align: center;
+}
+
+
+header {
+    text-align: center;
+    padding: 2cap;
+    background-color: #216839;
+    color: #ffffff;
+}
+
+
+#mapa2 {
+    height: 450px;
+}
+
+#nematoide2 {
+    border-radius: 10px;
+}
+
+#mapa2 {
+    border-radius: 30px;
+}
+
+
+#tabela2 {
+    border-radius: 20px;
+}
+
+
+#video2 {
+    border-radius: 10px;
+}
+
+
+#mapa,
+#tabela {
+    text-align: center;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+
+h2 {
+    color: #216839;
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+}
+
+
+h2 {
+    font-size: 2rem;
+}
+
+
+p {
+    font-size: 1rem;
+}
+
+
+ul {
+    list-style: square inside;
+    margin-bottom: 1rem;
+}
+
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+video {
+    margin: 1rem auto;
+    display: block;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+fieldset {
+    border: 2px solid #216839;
+    padding: 45px;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(50, 82, 61, 0.1);
+    width: 60%;
+    margin-left: 20%;
+}
+
+
+
+#mapa,
+#tabela {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #216839;
+    margin: 2rem 0;
+}
+
+
+.question {
+    background-color: #ffffff;
+    border: 1px solid #dcdde1;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.options li {
+    padding: 0.5rem;
+}
+
+
+table {
+    width: 30%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#descricao {
+    text-align: center;
+    color: #9bbea6;
+}
+
+thead th {
+    background-color: #216839;
+    color: #ffffff;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+
+tbody td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+}
+
+
+
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+header {
+    text-align: center;
+    padding: 2cap;
+    background-color: #216839;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+#nematoide {
+    width: 100%;
+}
+
+
+#ciclo-de-vida{
+    justify-content: space-between;
+    display: flex;
+    margin-inline: 30px;
+}
+
+#foto-ciclo{
+    width: 300%;
+    margin-inline: 30px;
+}
+
+.container-card {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-left: 5px solid #4caf50;
+  }
+  .card h4 {
+    margin-top: 0;
+    color: #42a045;
+  }
+  .card p {
+    margin: 0;
+  }
+    </style>
 </head>
 
+
 <body>
-    <a href="index.html" class="voltar-btn">Voltar</a>
+    <header>
+        <h1 id="titulo-p">Nematódeos</h1><br>
+    </header>
+    <br><br>
+
+
     <fieldset>
-        <header>
-            <h1 id="titulo-p">Nematódeos</h1><br>
-        </header><br><br>
-        <p>Nematoda, também conhecidos como Nematódeos, Nematóides e Nematelmintos, são vermes cilíndricos pertencentes
-            ao
-            reino Animalia.</p>
+
+        <h2>O que são?</h2><br>
+        <p>Os nematódeos, também conhecidos como vermes cilíndricos, desempenham um papel essencial nos
+            ecossistemas e
+            nas interações biológicas. Presentes em praticamente todos os ambientes, esses organismos
+            microscópicos
+            podem ser tanto aliados, como agentes de controle biológico, quanto inimigos, ao causar doenças em
+            plantas,
+            animais e humanos. Vamos explorar suas características, funções e impactos no meio ambiente.</p>
+
+        <br>
 
         <div id="nematoide">
             <img src="https://s4.static.brasilescola.uol.com.br/be/2023/03/lombriga-parasita-ascaris-lumbricoides-enrolada-um-nematodeo.jpg"
                 alt="Nematoda" id="nematoide2">
+            <p id="descricao">Exemplo de um nematoide.</p>
+
         </div>
-
         <br><br>
 
-        <h2>O que são?</h2><br>
-        <p id="p1">Os Nematódeos são vermes cilíndricos, constituem um filo incrivelmente diverso e abundante do reino
-            Animalia.
-            São
-            caracterizados pelo corpo alongado e cilíndrico, não segmentado e revestido por uma cutícula resistente.
-            Habitam
-            praticamente todos os ecossistemas da Terra, desde solos e águas até o interior de plantas e animais,
-            podendo
-            ser de vida livre ou parasitas. Eles possuem papéis ecológicos essenciais na decomposição e circulação de
-            nutrientes, participando de diversas cadeias alimentares.</p>
-
-        <br><br>
 
         <h2>Anatomia dos Nematódeos</h2><br>
-        <p>Sua estrutura única, desde a cutícula até o eficiente sistema digestório completo, faz deles um grupo
-            fascinante e essencial nos ecossistemas e na saúde humana, animal e vegetal.</p>
-
-
-        <ul>
-            <li><b>Parede do corpo:</b> Nematóides são vermes invertebrados com corpo alongado, cilíndrico e afilados
-                nas
-                extremidades, não segmentados e possuem simetria bilateral. Possuem uma cutícula externa complexa,
-                resistente e
-                acelular, que é trocada periodicamente (ecdise) para permitir o crescimento. <br>
-                Abaixo da cutícula há uma epiderme sincicial (uma massa celular multinucleada) e uma camada de músculos
-                longitudinais, responsáveis pela locomoção. <br>
-                Entre a parede corporal e o tubo digestivo há uma cavidade chamada pseudoceloma, preenchida por líquido
-                que
-                funciona como esqueleto hidrostático e distribui nutrientes.
-                <br><br>
-
-            <li><b>Sistema digestivo:</b> é completo, com boca e ânus, permitindo digestão extra e intracelular. A boca
-                geralmente possui estruturas como lábios, dentes ou placas cortantes para auxiliar na alimentação. O
-                trato
-                digestivo
-                inclui faringe muscular que suja os alimentos para o intestino, e um intestino reto, onde ocorre a
-                digestão
-                e
-                absorção.
-                <br><br>
-
-            <li><b>Sistema nervoso:</b> é em forma de um anel nervoso ao redor da faringe e cordões nervosos dorsal e
-                ventral
-                que
-                percorrem o corpo, sem cérebro verdadeiro. Possuem órgãos sensoriais simples, como cerdas táteis e
-                quimiorreceptores (anelídeos e fasmídeos).
-                <br><br>
-
-            <li><b>Sistema excretor:</b> normalmente pode variar entre as espécies, podendo envolver células
-                renetes(células
-                ventrais) ou um sistema de canais
-                excretores. A excreção de amônia é o principal produto de excreção nitrogenada.
-                <br><br>
-
-            <li><b>Sistema circulatório e respiratório:</b> os Nematódeos não possuem sistema circulatório e
-                respiratório. A
-                troca de gases e o transporte de nutrientes ocorrem através da difusão e do líquido pseudocelomático.
-        </ul>
+        <p>A fascinante anatomia dos nematódeos reflete sua incrível capacidade de adaptação a diferentes ambientes e
+            estilos de vida. Desde sua parede corporal resistente até sistemas internos simplificados e eficientes,
+            esses organismos apresentam estruturas que os tornam essenciais nos ecossistemas e relevantes para a saúde
+            de plantas, animais e seres humanos. Vamos explorar os principais aspectos que definem sua anatomia única.
+        </p>
         <br>
+
 
         <div id="mapa">
             <img src="anatomia-nematodeos.png" alt="Mapa Mental - Anatomia" id="mapa2">
@@ -112,31 +539,26 @@
                 cordões
                 nervosos longitudinais. </li><br>
 
-
             <li><b>Células musculares:</b> Células longitudinais que, ao se contraírem contra o pseudoceloma, permitem o
                 movimento do verme. Células musculares longitudinais permitem movimentos ondulatórios.</li><br>
-
 
             <li><b>Células glandulares:</b> Presentes em diversas partes do corpo, secretam enzimas digestivas, adesivos
                 para fixação (em parasitas) ou substâncias para auxiliar na penetração em tecidos hospedeiros. As
                 células
                 rentes, quando presentes, atuam na excreção.</li><br>
 
-
             <li><b>Neurônios e células sensoriais:</b> Formam o sistema nervoso, permitindo a percepção de estímulos
                 mecânicos, químicos e, em alguns casos, luminosos. Os afídeos e fasmídeos são órgãos sensoriais
                 quimiorreceptores importantes para a localização de alimento e parceiros sexuais.</li><br>
 
-
             <li><b>Células intestinais:</b> Responsáveis pela digestão e absorção de nutrientes.</li><br>
-
 
             <li><b>Células reprodutivas (gônadas):</b> Produzem gametas para reprodução (espermatozóides e óvulos).</li>
             <br>
 
-
             <li><b>Células nervosas:</b> formam cordões nervosos para controle motor e sensorial.</li><br><br>
         </ul>
+
 
         <br><br>
         <h2>Mecanismos de Alimentação</h2><br>
@@ -152,39 +574,41 @@
             absorvendo nutrientes diretamente do hospedeiro.</p>
         <br><br>
 
-
         <h2>Principais Classes e suas Características</h2><br>
         <p>Os nematódeos são divididos em duas classes: Adenophorea (ou Enoplea) Secernentea (ou Phasmida), nelas são
             encontradas as principais diferenças morfológicas e ecológicas. Além disso, há subdivisões em subclasses e
             ordens.</p><br>
 
-
-        <h4>Principais características dos Adenophorea:</h4><br>
-        <ul>
-            <li>Boca simples, sem lábios evidentes</li>
-            <li>Faringe geralmente cilíndrica, sem bulbos</li>
-            <li>Sistema excretor simples</li>
-            <li>Muitos de vida livre, comuns em solos e ambientes aquáticos.</li>
-        </ul>
+        <article id="caracteristicas">
+            <ul class="caracteristicas-list">
 
 
-        <h4>Principais características dos Secernentea:</h4><br>
-        <ul>
-            <li>Boca com lábios bem desenvolvidos</li>
-            <li>Faringe com bulbos musculares ou glandulares</li>
-            <li>Sistema excretor mais complexo (células renetes em formato de H)</li>
-            <li>Presença de fasmídeos (órgãos sensoriais caudais)</li>
-            <li>Inclui a maioria dos parasitas de plantas e animais</li>
-        </ul>
+                <li><b>Principais características dos Adenophorea:</b><br><br>
+                    <p>Boca simples, sem lábios evidentes</p><br>
+                    <p>Faringe geralmente cilíndrica, sem bulbos</p><br>
+                    <p>Sistema excretor simples</p><br>
+                    <p>Muitos de vida livre, comuns em solos e ambientes aquáticos.</p><br>
+                </li>
 
 
-        <h4>Outras subdivisões (subclasses e ordens):</h4><br>
-        <ul>
-            <li>Enoplia: geralmente de vida livre, faringe simples. </li>
-            <li>Chromadoria: inclui nematódeos de vida livre e alguns parasitas, faringe diferenciada.</li>
-            <li>Rhabditida: vida livre e parasitas intestinais.</li>
-            <li>Spiruria: parasitas de vertebrados, ciclo de vida complexo.</li>
-        </ul>
+                <li><b>Principais características dos Secernentea:</b> <br><br>
+                    <p>Boca com lábios bem desenvolvidos</p><br>
+                    <p>Faringe com bulbos musculares ou glandulares</p><br>
+                    <p>Sistema excretor mais complexo (células renetes em formato de H)</p><br>
+                    <p>Presença de fasmídeos (órgãos sensoriais caudais)</p><br>
+                    <p>Inclui a maioria dos parasitas de plantas e animais</p><br>
+                </li>
+
+
+                <li><b>Outras subdivisões (subclasses e ordens):</b><br><br>
+                    <p>Enoplia: geralmente de vida livre, faringe simples. </p><br>
+                    <p>Chromadoria: inclui nematódeos de vida livre e alguns parasitas, faringe diferenciada.</p><br>
+                    <p>Rhabditida: vida livre e parasitas intestinais.</p><br>
+                    <p>Spiruria: parasitas de vertebrados, ciclo de vida complexo.</p><br>
+                </li>
+            </ul>
+        </article>
+
 
         <br><br>
         <h2>Métodos de reprodução (assexuada e sexuada):</h2><br>
@@ -193,223 +617,232 @@
             formas de reprodução assexuada, dependendo da espécie. Veja a seguir, uma tabela comparando os dois tipos de
             reprodução:</p>
 
+
         <div id="tabela">
             <img src="tabela-reproducao.png" alt="tabela comparativa" height="400px" id="tabela2">
         </div>
 
+
         <br><br>
 
         <h2>Ciclo de Vida dos Nematóides</h2><br>
-        <p>O ciclo de vida dos nematódeos compreende as seguintes fases principais: ovo, quatro estádios juvenis (J1 a
-            J4) e
-            a forma adulta (macho ou fêmea). Após a eclosão do ovo, o nematoide juvenil já se assemelha ao adulto, porém
-            em
-            tamanho reduzido e com sistema reprodutor ainda imaturo. Durante o desenvolvimento, o nematoide passa por
-            quatro
-            ecdises, que são trocas periódicas da cutícula, até atingir a maturidade sexual. Não ocorre metamorfose
-            completa, por isso os estádios juvenis não são considerados larvas no sentido clássico.</p>
-        <p>O ciclo pode ser direto, quando o nematóide completa seu desenvolvimento em um único hospedeiro, ou indireto,
-            quando envolve hospedeiros intermediários. A duração do ciclo varia conforme fatores bióticos (tipo de
-            hospedeiro) e abióticos (temperatura, umidade), podendo durar de dias a semanas, e em alguns casos até anos.
-            Em
-            média, o ciclo dura cerca de três a quatro semanas.</p>
-        <p>No caso dos nematoides fitoparasitas, como Meloidogyne (nematoide-das-galhas), o juvenil de segundo estádio
-            (J2)
-            é a forma infectante que penetra nas raízes das plantas, migra entre as células e se torna um endoparasita
-            sedentário, estimulando a formação de células gigantes que servem de fonte de alimento. O nematoide então
-            cresce, passando pelos estádios juvenis seguintes até se tornar adulto.</p>
-        <p>Algumas espécies possuem mecanismos de resistência, como a diapausa (dormência) no ovo ou no estádio juvenil
-            dentro do ovo, que permite sobreviver a condições ambientais adversas, como baixas temperaturas ou falta de
-            alimento.</p>
+        <div id="ciclo-de-vida">
+            <p>O ciclo de vida dos nematoides inclui as fases de ovo, quatro estádios juvenis (J1 a J4) e a forma
+                adulta. Após a eclosão, o juvenil já se assemelha ao adulto, mas é menor e ainda imaturo. Durante o
+                crescimento, passa por quatro ecdises (trocas de cutícula) até atingir a maturidade sexual, sem sofrer
+                metamorfose completa.
 
-        <br>
+                O ciclo pode ser direto (em um único hospedeiro) ou indireto (envolvendo hospedeiros intermediários),
+                com duração de dias a semanas, ou até anos, dependendo de fatores ambientais e biológicos. Em média,
+                dura de três a quatro semanas. <br> Em espécies fitoparasitas, como Meloidogyne, o juvenil de segundo
+                estádio (J2) penetra nas raízes, tornando-se um endoparasita que estimula a formação de células gigantes
+                para se alimentar. Algumas espécies apresentam mecanismos de resistência, como a dormência em ovos,
+                sobrevivendo a condições adversas.</p>
+
+            <br><br>
+            <div id="foto-ciclo">
+                <img src="cliclo.png" alt="ciclo de vida">
+            </div>
+        </div>
+
+        <br><br><br>
         <h2>Papel dos nematódeos nos ecossistemas</h2><br>
         <p>Os nematódeos desempenham um papel crucial nos ecossistemas, sendo fundamentais para diversos processos
             ecológicos. Aqui estão os principais papéis dos nematódeos nos ecossistemas:</p><br>
 
-
-        <h4>1. Ciclagem de nutrientes e decomposição</h4><br>
-        <p>
-            Nematóides de vida livre (bacteriófagos e micófagos) aceleram a decomposição da matéria orgânica ao consumir
-            microrganismos como bactérias e fungos, liberando nutrientes como carbono e nitrogênio no solo.
-            Em ecossistemas terrestres, regulam a mineralização de nutrientes, influenciando diretamente a fertilidade
-            do
-            solo.
-            Em ambientes marinhos, facilitam a remineralização da matéria orgânica nos sedimentos, aumentando a
-            disponibilidade de nutrientes para organismos bentônicos.
-        </p><br>
-
-
-        <h4>2. Regulação da microbiota</h4><br>
-        <p>
-            Atuam como predadores de microrganismos, controlando populações bacterianas e fúngicas.
-            Essa interação estimula o metabolismo microbiano e modifica a estrutura das comunidades microbianas,
-            otimizando
-            processos como fixação de nitrogênio e decomposição.
-        </p><br>
-
-
-        <h4>3. Bioindicação ambiental</h4><br>
-        <p>
-            Sua diversidade taxonômica e sensibilidade a alterações químicas ou físicas do solo os tornam indicadores
-            precisos da qualidade ambiental.
-            Mudanças em suas comunidades refletem impactos como poluição, manejo agrícola inadequado ou variações na
-            matéria
-            orgânica.
-        </p><br>
-
-
-        <h4>4. Controle biológico de pragas</h4><br>
-        <p>
-            Nematoides entomopatogênicos (ex.: <em>Steinernema</em> e <em>Heterorhabditis</em>) parasitam insetos
-            pragas,
-            liberando bactérias simbióticas (<em>Xenorhabdus</em> e <em>Photorhabdus</em>) que causam septicemia fatal.
-            Essa ação reduz populações de insetos sem uso de químicos, sendo uma ferramenta sustentável na agricultura.
-        </p><br>
-
-
-        <h4>5. Base de cadeias alimentares</h4><br>
-        <p>
-            Em ecossistemas marinhos, constituem uma fonte energética crítica para organismos bentônicos.
-            Estudos mostram que sua biomassa e respiração podem superar a da macrofauna, sendo consumidos diretamente
-            por
-            peixes e outros animais, mesmo que involuntariamente.
-        </p><br>
-
-
-        <h4>6. Modificação física do ambiente</h4><br>
-        <p>
-            Em sedimentos marinhos, a produção de muco por nematóides altera a textura dos sedimentos, facilitando
-            atividades de escavação por outros organismos e melhorando a oxigenação.
-        </p><br>
-
-
-        <h4>7. Sustentabilidade agrícola</h4><br>
-        <p>
-            A adição de matéria orgânica ao solo promove o aumento de nematóides benéficos, que competem com
-            fitonematoides
-            patogênicos.
-            Esse equilíbrio biológico reduz a dependência de nematicidas químicos.
-            Em ecossistemas naturais, sua alta diversidade (com espécies especializadas em diferentes nichos) garante
-            estabilidade e resiliência ecológica, enquanto em agroecossistemas, seu monitoramento orienta práticas de
-            manejo
-            sustentável.
-        </p>
-        <br><br>
-        <h2>Importância para a biodiversidade e os ecossistemas </h2><br>
-        <p>Afinal, os Nematódeos são importantes na biodiversidade e nos ecossistemas? A resposta é sim. Eles possuem um
-            importância significativa nos ecossistemas e na vida humana. Eles desempenham papéis ecológicos, econômicos
-            e
-            científicos relevantes, tanto de forma benéfica quanto prejudicial. Aqui estão os principais pontos:
-        </p>
-        <p>O vídeo a seguir irá mostrar sua grande importância:</p>
-
-        <div id="video">
-            <video src="video_nematoides.mp4" controls width="640" height="360" id="video2"></video>
-        </div>
-
-        <br><hr><br>
-
-        <h2>Questões</h2><br>
-        <p>Agora que você já conhece os Nematódeos e sua importância, que tal fazer algumas questões para reforçar seu
-            conhecimento? Segue abaixo o questionário.</p><br><br>
-
-        <div class="question">
-            <p><strong>Questão 1:</strong></p>
-            <p>Os nematódeos são um filo de vermes que podem ser encontrados em diversos ecossistemas. Quais são algumas
-                das principais características desses organismos?</p>
-            <ul class="options">
-                <p>a) Corpo segmentado e com exoesqueleto</p>
-                <p>b) Corpo cilíndrico e revestido por uma cutícula resistente</p>
-                <p>c) Presença de sistema circulatório e respiratório</p>
-                <p>d) Maioria das espécies de vida livre, com algumas parasitas</p>
-            </ul>
-        </div>
-
-        <div class="question">
-            <p><strong>Questão 2:</strong></p><br>
-            <p>Quais são as funções ecológicas dos nematódeos no ambiente?</p>
-            <ul class="options">
-                <p>a) Participar da decomposição e circulação de nutrientes, além de fazer parte de cadeias alimentares
+        <div class="container-card">
+            <div class="card">
+                <h4>1. Ciclagem de nutrientes e decomposição</h4><br>
+                <p>
+                    Nematóides de vida livre (bacteriófagos e micófagos) aceleram a decomposição da matéria orgânica ao
+                    consumir
+                    microrganismos como bactérias e fungos, liberando nutrientes como carbono e nitrogênio no solo. Em
+                    ecossistemas
+                    terrestres, regulam a mineralização de nutrientes, influenciando diretamente a fertilidade do solo.
+                    Em
+                    ambientes marinhos, facilitam a remineralização da matéria orgânica nos sedimentos, aumentando a
+                    disponibilidade
+                    de nutrientes para organismos bentônicos.
                 </p>
-                <p>b) Apenas atuar como parasitas de plantas</p>
-                <p>c) Apenas consumir matéria orgânica</p>
-                <p>d) Atuar exclusivamente como predadores de outros vermes</p>
-            </ul>
-        </div>
+            </div>
 
-        <div class="question">
-            <p><strong>Questão 3:</strong></p><br>
-            <p>Quais são as principais fontes de alimento para os nematódeos de vida livre?</p>
-            <ul class="options">
-                <p>a) Plantas aquáticas</p>
-                <p>b) Microrganismos, como bactérias, fungos e algas</p>
-                <p>c) Animais maiores, como peixes e répteis</p>
-                <p>d) Outras espécies de nematódeos</p>
-            </ul>
-        </div>
+            <div class="card">
+                <h4>2. Regulação da microbiota</h4><br>
+                <p>
+                    Atuam como predadores de microrganismos, controlando populações bacterianas e fúngicas. Essa
+                    interação estimula o
+                    metabolismo microbiano e modifica a estrutura das comunidades microbianas, otimizando processos como
+                    fixação de
+                    nitrogênio e decomposição.
+                </p>
+            </div>
 
-        <div class="question">
-            <p><strong>Questão 4:</strong></p><br>
-            <p>Alguns nematódeos possuem estruturas especializadas para rasgar a parede corporal de pequenas presas. Que
-                tipo de alimentação esse comportamento caracteriza?</p>
-            <ul class="options">
-                <p>a) Bacteriófaga</p>
-                <p>b) Fitofágica</p>
-                <p>c) Micófaga</p>
-                <p>d) Predadora</p>
-            </ul>
-        </div>
+            <div class="card">
+                <h4>3. Bioindicação ambiental</h4><br>
+                <p>
+                    Sua diversidade taxonômica e sensibilidade a alterações químicas ou físicas do solo os tornam
+                    indicadores
+                    precisos da qualidade ambiental. Mudanças em suas comunidades refletem impactos como poluição,
+                    manejo agrícola
+                    inadequado ou variações na matéria orgânica.
+                </p>
+            </div>
 
-        <div class="question">
-            <p><strong>Questão 5:</strong></p><br>
-            <p>Como os nematódeos de vida livre contribuem para a ciclagem de nutrientes nos ecossistemas?</p>
-            <ul class="options">
-                <p>a) Consumindo diretamente matéria orgânica</p>
-                <p>b) Prejudicando as comunidades de microrganismos</p>
-                <p>c) Acelerando a decomposição ao consumir microrganismos como bactérias e fungos</p>
-                <p>d) Produzindo nutrientes essenciais para plantas</p>
-            </ul>
-        </div>
-        <br>
+            <div class="card">
+                <h4>4. Controle biológico de pragas</h4><br>
+                <p>
+                    Nematoides entomopatogênicos (ex.: <em>Steinernema</em> e <em>Heterorhabditis</em>) parasitam
+                    insetos pragas,
+                    liberando bactérias simbióticas (<em>Xenorhabdus</em> e <em>Photorhabdus</em>) que causam septicemia
+                    fatal. Essa
+                    ação reduz populações de insetos sem uso de químicos, sendo uma ferramenta sustentável na
+                    agricultura.
+                </p>
+            </div>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Questão</th>
-                    <th>Resposta Correta</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>b</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>a</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>b</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>d</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>c</td>
-                </tr>
-            </tbody>
-        </table>
-        <br>
+            <div class="card">
+                <h4>5. Base de cadeias alimentares</h4><br>
+                <p>
+                    Em ecossistemas marinhos, constituem uma fonte energética crítica para organismos bentônicos.
+                    Estudos mostram que
+                    sua biomassa e respiração podem superar a da macrofauna, sendo consumidos diretamente por peixes e
+                    outros
+                    animais, mesmo que involuntariamente.
+                </p>
+            </div>
+
+            <div class="card">
+                <h4>6. Modificação física do ambiente</h4><br>
+                <p>
+                    Em sedimentos marinhos, a produção de muco por nematóides altera a textura dos sedimentos,
+                    facilitando atividades
+                    de escavação por outros organismos e melhorando a oxigenação.
+                </p>
+            </div>
+            <br><br>
+            <h2>Importância para a biodiversidade e os ecossistemas </h2><br>
+            <p>Afinal, os Nematódeos são importantes na biodiversidade e nos ecossistemas? A resposta é sim. Eles
+                possuem um
+                importância significativa nos ecossistemas e na vida humana. Eles desempenham papéis ecológicos,
+                econômicos
+                e
+                científicos relevantes, tanto de forma benéfica quanto prejudicial. Aqui estão os principais pontos:
+            </p>
+            <p>O vídeo a seguir irá mostrar sua grande importância:</p>
+
+
+            <div id="video">
+                <video src="video_nematoides.mp4" controls width="640" height="360" id="video2"></video>
+            </div>
+
+
+            <br>
+            <hr><br>
+
+            <h2>Questões</h2><br>
+            <p>Agora que você já conhece os Nematódeos e sua importância, que tal fazer algumas questões para reforçar
+                seu
+                conhecimento? Segue abaixo o questionário.</p><br><br>
+
+
+            <div class="question">
+                <p><strong>Questão 1:</strong></p><br>
+                <p>Os nematódeos são um filo de vermes que podem ser encontrados em diversos ecossistemas. Quais são
+                    algumas
+                    das principais características desses organismos?</p><br>
+                <ul class="options">
+                    <p><b class="opc">a)</b> Corpo segmentado e com exoesqueleto</p>
+                    <p><b class="opc">b)</b> Corpo cilíndrico e revestido por uma cutícula resistente</p>
+                    <p><b class="opc">c)</b> Presença de sistema circulatório e respiratório</p>
+                    <p><b class="opc">d)</b> Maioria das espécies de vida livre, com algumas parasitas</p>
+                </ul>
+            </div>
+
+            <div class="question">
+                <p><strong>Questão 2:</strong></p><br>
+                <p>Quais são as funções ecológicas dos nematódeos no ambiente?</p><br>
+                <ul class="options">
+                    <p><b class="opc">a)</b> Participar da decomposição e circulação de nutrientes, além de fazer parte
+                        de
+                        cadeias alimentares
+                    </p>
+                    <p><b class="opc">b)</b> Apenas atuar como parasitas de plantas</p>
+                    <p><b class="opc">c)</b> Apenas consumir matéria orgânica</p>
+                    <p><b class="opc">d)</b> Atuar exclusivamente como predadores de outros vermes</p>
+                </ul>
+            </div>
+
+            <div class="question">
+                <p><strong>Questão 3:</strong></p><br>
+                <p>Quais são as principais fontes de alimento para os nematódeos de vida livre?</p><br>
+                <ul class="options">
+                    <p><b class="opc">a)</b> Plantas aquáticas</p>
+                    <p><b class="opc">b)</b> Microrganismos, como bactérias, fungos e algas</p>
+                    <p><b class="opc">c)</b> Animais maiores, como peixes e répteis</p>
+                    <p><b class="opc">d)</b> Outras espécies de nematódeos</p>
+                </ul>
+            </div>
+
+            <div class="question">
+                <p><strong>Questão 4:</strong></p><br>
+                <p>Alguns nematódeos possuem estruturas especializadas para rasgar a parede corporal de pequenas presas.
+                    Que
+                    tipo de alimentação esse comportamento caracteriza?</p><br>
+                <ul class="options">
+                    <p><b class="opc">a)</b> Bacteriófaga</p>
+                    <p><b class="opc">b)</b> Fitofágica</p>
+                    <p><b class="opc">c)</b> Micófaga</p>
+                    <p><b class="opc">d)</b> Predadora</p>
+                </ul>
+            </div>
+
+            <div class="question">
+                <p><strong>Questão 5:</strong></p><br>
+                <p>Como os nematódeos de vida livre contribuem para a ciclagem de nutrientes nos ecossistemas?</p><br>
+                <ul class="options">
+                    <p><b class="opc">a)</b> Consumindo diretamente matéria orgânica</p>
+                    <p><b class="opc">b)</b> Prejudicando as comunidades de microrganismos</p>
+                    <p><b class="opc">c)</b> Acelerando a decomposição ao consumir microrganismos como bactérias e
+                        fungos
+                    </p>
+                    <p><b class="opc">d)</b> Produzindo nutrientes essenciais para plantas</p>
+                </ul>
+            </div>
+            <br>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Questão</th>
+                        <th>Resposta Correta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>b</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>a</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>b</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>d</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>c</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
     </fieldset>
 
-    <footer>
-        <p>Nicole dos Santos Moreira – Projeto Integrador SESI/SENAI | 2025</p>
-    </footer>
 </body>
-
 
 </html>
