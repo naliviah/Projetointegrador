@@ -24,6 +24,54 @@
 
 
 <style>
+.card-deck {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    position: relative;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .hover-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    color: black;
+    padding: 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    border-top: 1px solid #ccc;
+  }
+
+  .card:hover .hover-content {
+    max-height: 150px; /* Ajuste de altura do conteúdo que aparece */
+  }
+
+    
 #cabecalho {
   background-color: #b84482;
   color: white;
@@ -406,43 +454,45 @@ button:hover {
         <p>O Modernismo no Brasil está dividido em três gerações, sendo a prosa o tipo de texto mais explorado na
             terceira fase. De tal modo, os tipos de prosa do período são classificados segundo sua temática:</p>
 
-      <div class="card-deck">
+
+<div class="card-deck">
   <div class="card">
-      
+    <img class="card-img-top" src="https://m.media-amazon.com/images/I/61TaHURu27L.jpg" alt="Prosa Urbana">
     <div class="card-body">
-        <img class="card-img-top" src="https://m.media-amazon.com/images/I/61TaHURu27L.jpg" alt="Card image cap">
       <h5 class="card-title">Prosa Urbana</h5>
       <p class="card-text">
         A principal característica da prosa urbana é sua ambientação nos espaços da cidade, em detrimento do campo e
         do espaço agrário. Nesse estilo destaca-se a escritora <strong>Lygia Fagundes Telles</strong>.
       </p>
     </div>
+    <div class="hover-content">
+      <p>Texto adicional exibido ao passar o mouse.</p>
+    </div>
   </div>
 
   <div class="card">
-      <img class="card-img-top" src="https://m.media-amazon.com/images/I/81NtboFZziL._AC_UF1000,1000_QL80_.jpg" alt="Card image cap">
+    <img class="card-img-top" src="https://m.media-amazon.com/images/I/81NtboFZziL._AC_UF1000,1000_QL80_.jpg" alt="Prosa Regionalista">
     <div class="card-body">
       <h5 class="card-title">Prosa Regionalista</h5>
       <p class="card-text">
-        A prosa regionalista absorve, por outro lado, aspectos do campo, da vida agrária, da fala coloquial e
-        regionalista, por exemplo, na obra de <strong>Guimarães Rosa</strong>.
+        A prosa regionalista absorve aspectos do campo, da vida agrária e da fala coloquial, como na obra de
+        <strong>Guimarães Rosa</strong>.
       </p>
+    </div>
+    <div class="hover-content">
+      <p>Texto adicional exibido ao passar o mouse.</p>
     </div>
   </div>
 
   <div class="card">
-      <img class="card-img-top" src="https://m.media-amazon.com/images/I/71ikTpqg2PL._AC_UF1000,1000_QL80_.jpg" alt="Card image cap">
+    <img class="card-img-top" src="https://m.media-amazon.com/images/I/71ikTpqg2PL._AC_UF1000,1000_QL80_.jpg" alt="Prosa Intimista">
     <div class="card-body">
       <h5 class="card-title">Prosa Intimista</h5>
       <p class="card-text">
-        Por sua vez, a prosa intimista é determinada pela exploração de temas humanos e, portanto, é mais íntima,
-        psicológica e subjetiva. Esses aspectos são observados nas obras de <strong>Clarice Lispector</strong> e de
-        <strong>Lygia Fagundes Telles</strong>.
+        A prosa intimista explora temas humanos de forma mais subjetiva e psicológica, como nas obras de
+        <strong>Clarice Lispector</strong> e <strong>Lygia Fagundes Telles</strong>.
       </p>
     </div>
-  </div>
-</div>
-
         <h3>Poesia Modernista</h3>
         <p>Ainda que a prosa tenha sido o tipo de texto mais explorado na terceira geração modernista, a poesia é
             apresentada mediante aspectos de equilíbrio. Por isso, os poetas dessa fase eram chamados de
