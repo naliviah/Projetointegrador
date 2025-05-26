@@ -109,10 +109,6 @@ audio {
     transition: background 0.3s ease; /* Transição suave para o hover */
   }
   
-  .voltar-btn:hover {
-    background:  #0077cc;
-    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada no hover */
-  }
 
 /* Rodapé */
 footer {
